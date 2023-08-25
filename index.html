@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Charts Tutorial</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            packages: ['corechart']
+        });
+    </script>
+    <style>
+      body{
+        background-color: rgb(143, 143, 143);
+      }
+    </style>
+</head>
+<body>
+    <div id="container" style="width: 550px; height: 800px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        function drawChart() {
+            /* Define the chart to be drawn.*/
+            var data = google.visualization.arrayToDataTable([
+                ['Page Vist', 'Totalt antal steg', 'MÅL'],
+                ['Uppsala', 0, 3541429],
+                ['R&I', 1000000, 3541429],
+                ['E&C', 0, 3541429],
+                ['J&L', 0, 3541429]
+              
+            ]);
+            var options = {
+                title: 'Steg mot solen',
+                isStacked: true,
+                seriesType: 'bars', // Använd staplar
+                series: {
+                    0: { color: 'blue' },
+                    1: { color: 'red', type: 'line' } // Använd linje för Maxvärde-serien
+                },
+                vAxis: { minValue: 0 },
+                backgroundColor: 'rgb(143, 143, 143)'
+
+            };
+            /* Instantiate and draw the chart.*/
+            var chart = new google.visualization.ComboChart(document.getElementById('container'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+    <div style="text-align: center;">
+      <img  src="pic.png" alt="error">
+    </div>
+</body>
+</html>
