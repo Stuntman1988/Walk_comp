@@ -1,5 +1,6 @@
 import { StepsOfUsers } from "../models/StepsOfUsers";
 import { Progressbar } from "./Progressbar";
+import { StepConverter } from "./StepConverter";
 
 export const Scoreboard = () => {
 
@@ -21,8 +22,12 @@ export const Scoreboard = () => {
             <h1 className={'text-center'}>Vem vinner?</h1>
             <h5 className={'text-end'}>Stegmål: 3 541 429</h5>
             {steps.map((t, index) => (
-                <Progressbar data={t} key={index}/>
+                <Progressbar data={t} key={index} />
             ))}
+            <button type="button" className="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Stegkonverterare
+            </button>
+            <StepConverter />
         </div>
     )
 }
