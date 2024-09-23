@@ -14,7 +14,9 @@ export const Progressbar: React.FC<{ data: StepsOfUsers, goalSteps: number, week
 
     return (
         <div className={'mt-3'}>
-            <p className={'form-label'}>{prop.data.name} - {prop.data.totalSteps.toLocaleString('sv-SE')} steg - ({countAveragePerDay(prop.data.totalSteps)} steg/dag)</p>
+            <p className={'form-label'}>{prop.data.name} - {prop.data.totalSteps.toLocaleString('sv-SE')} steg - {countAveragePerDay(prop.data.totalSteps)} steg/dag
+                {prop.data.comment && ` - ${prop.data.comment}`}
+            </p>
             <div className={'progress bg-light bg-opacity-25'} role={'progressbar'} aria-label={'Animated striped example'}
                  aria-valuenow={percentOfSteps}
                  aria-valuemin={0} aria-valuemax={100}>
