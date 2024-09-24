@@ -12,7 +12,7 @@ export const Scoreboard = () => {
         new StepsOfUsers(2, 'Isabell', 155197),
         new StepsOfUsers(3, 'Eva', 145075),
         new StepsOfUsers(4, 'Christer', 79303),
-        new StepsOfUsers(5, 'Bosse', 21300, 'Ej uppdaterad vecka 2'), //ej upd vecka 2
+        new StepsOfUsers(5, 'Bosse', 39209),
         new StepsOfUsers(6, 'Annika', 0),
         new StepsOfUsers(7, 'Crisse', 0),
     ]
