@@ -14,7 +14,7 @@ export const Scoreboard = () => {
         new StepsOfUsers(4, 'Christer', 109983),
         new StepsOfUsers(5, 'Bosse', 55319),
         new StepsOfUsers(6, 'Annika', 0),
-        new StepsOfUsers(7, 'Crisse', 0),
+        new StepsOfUsers(7, 'Crisse', 306900),
     ]
 
     steps.sort((a, b) => b.totalSteps - a.totalSteps)
