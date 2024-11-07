@@ -5,7 +5,7 @@ import { StepConverter } from "./StepConverter";
 export const Scoreboard = () => {
 
     const goalSteps = 3541429
-    const week = 8
+    const week = 7
 
     const steps = [
         new StepsOfUsers(1, 'Robin', 472822),
@@ -13,7 +13,7 @@ export const Scoreboard = () => {
         new StepsOfUsers(3, 'Eva', 614859),
         new StepsOfUsers(4, 'Christer', 324048),
         new StepsOfUsers(5, 'Bosse', 192936),
-        new StepsOfUsers(6, 'Crisse', 731620, 'Vecka 7'),
+        new StepsOfUsers(6, 'Crisse', 636620, 'Vecka 6'),
     ]
 
     steps.sort((a, b) => b.totalSteps - a.totalSteps)
