@@ -5,20 +5,21 @@ import { StepConverter } from "./StepConverter";
 export const Scoreboard = () => {
 
     const goalSteps = 3541429
-    const week = 9
+    const week = 10
 
     const steps = [
-        new StepsOfUsers(1, 'Robin', 602665),
-        new StepsOfUsers(2, 'Isabell', 805189),
-        new StepsOfUsers(3, 'Eva', 747683),
-        new StepsOfUsers(4, 'Christer', 390001),
-        new StepsOfUsers(5, 'Bosse', 239560),
-        new StepsOfUsers(6, 'Crisse', 636620, 'Vecka 6'),
+        new StepsOfUsers(1, 'Robin', 668664),
+        new StepsOfUsers(2, 'Isabell', 931607),
+        new StepsOfUsers(3, 'Eva', 803005),
+        new StepsOfUsers(4, 'Christer', 417079),
+        new StepsOfUsers(5, 'Bosse', 264661),
+        new StepsOfUsers(6, 'Crisse', 1097520),
     ]
 
     steps.sort((a, b) => b.totalSteps - a.totalSteps)
 
     steps.sort
+    
     return (
         <div className={'container mt-3'}>
             <h1 className={'text-center'}>Vem vinner?</h1>
