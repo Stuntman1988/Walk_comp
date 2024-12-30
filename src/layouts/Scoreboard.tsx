@@ -5,14 +5,14 @@ import { StepConverter } from "./StepConverter";
 export const Scoreboard = () => {
 
     const goalSteps = 3541429
-    const week = 13
+    const week = 14
 
     const steps = [
-        new StepsOfUsers(1, 'Robin', 834456),
-        new StepsOfUsers(2, 'Isabell', 1172589),
-        new StepsOfUsers(3, 'Eva', 1021720),
-        new StepsOfUsers(4, 'Christer', 535017),
-        new StepsOfUsers(5, 'Bosse', 337472),
+        new StepsOfUsers(1, 'Robin', 877674),
+        new StepsOfUsers(2, 'Isabell', 1256868),
+        new StepsOfUsers(3, 'Eva', 1073318),
+        new StepsOfUsers(4, 'Christer', 573952),
+        new StepsOfUsers(5, 'Bosse', 356931),
         new StepsOfUsers(6, 'Crisse', 1097520, "Vecka 10"),
     ]
 
