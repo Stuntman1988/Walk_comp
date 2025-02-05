@@ -35,10 +35,14 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+      - name: Clear cache
+        run: rm -rf node_modules package-lock.json && npm cache clean --force 
       - name: Install dependencies
         run: npm install
       - name: Build
         run: npm run build
+      - name: Debug build output
+        run: ls -la ./dist
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
@@ -46,6 +50,8 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
+      - name: Debug artifact upload
+        run: echo "Checking uploaded artifacts" && ls -la ${{ runner.temp }}/pages_artifact
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
