@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/layouts/homepage.tsx","./src/layouts/progressbar.tsx","./src/layouts/scoreboard.tsx","./src/layouts/stepconverter.tsx","./src/models/stepsofusers.ts"],"version":"5.6.2"}
