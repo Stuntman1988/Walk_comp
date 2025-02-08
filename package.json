@@ -1,6 +1,6 @@
 {
-  "homepage": "https://Stuntman1988.github.io/Walk_comp",
   "name": "walk-comp",
+  "homepage": "https://Stuntman1988.github.io/Walk_comp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/Stuntman1988/Walk_comp.git"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
