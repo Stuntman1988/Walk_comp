@@ -8,7 +8,7 @@ export const Scoreboard = () => {
     const week = 20
 
     const steps = [
-        new StepsOfUsers(1, 'Robin', 1108658),
+        new StepsOfUsers(1, 'Robin', 1108659),
         new StepsOfUsers(2, 'Isabell', 1499966),
         new StepsOfUsers(3, 'Eva', 1403073),
         new StepsOfUsers(4, 'Christer', 848350),
